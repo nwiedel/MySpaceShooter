@@ -17,15 +17,17 @@ public class Lwjgl2Launcher {
 
     private static LwjglApplicationConfiguration getDefaultConfiguration() {
         LwjglApplicationConfiguration configuration = new LwjglApplicationConfiguration();
-        configuration.title = "myspaceshooter";
+        configuration.title = "Space Shooter Prototype";
         configuration.width = 640;
         configuration.height = 480;
         //// This prevents a confusing error that would appear after exiting normally.
         configuration.forceExit = false;
 
-        for (int size : new int[] { 128, 64, 32, 16 }) {
+        configuration.addIcon("icon.png", FileType.Internal);
+
+        /*for (int size : new int[] { 128, 64, 32, 16 }) {
             configuration.addIcon("libgdx" + size + ".png", FileType.Internal);
-        }
+        }*/
         return configuration;
     }
 }
