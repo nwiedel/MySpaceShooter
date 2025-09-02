@@ -15,8 +15,6 @@ public class SpaceShooterGame extends ApplicationAdapter {
     public void create() {
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
-        TestClass.print();
-        Testclass2.print();
     }
 
     @Override
