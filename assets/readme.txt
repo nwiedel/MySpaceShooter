@@ -17,8 +17,8 @@ Einführung in die Spieleentwicklung.
 
 
 
-1. Neuew Module erstellen
-- neues direktory erstellen
+1. Neues Modul erstellen
+- neues directory erstellen
 - normale Gliederung: src - java
 - java als source root setzen (Rechtsclick)
 - bulid gradle (cor) kopieren und in neues Modul einfügen, Namen im Text ändern und

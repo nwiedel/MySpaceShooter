@@ -1,33 +1,17 @@
 package com.myspaceshooter;
 
 import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.utils.ScreenUtils;
-import de.nicolas.Testclass2;
+import com.myspaceshooter.screens.game.GameScreen;
+import de.nicolas.baseclasses.GameBase;
 
-/** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
-public class SpaceShooterGame extends ApplicationAdapter {
-    private SpriteBatch batch;
-    private Texture image;
+public class SpaceShooterGame extends GameBase {
 
-    @Override
-    public void create() {
-        batch = new SpriteBatch();
-        image = new Texture("libgdx.png");
+    public SpaceShooterGame(){
+
     }
 
     @Override
-    public void render() {
-        ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
-        batch.begin();
-        batch.draw(image, 140, 210);
-        batch.end();
-    }
-
-    @Override
-    public void dispose() {
-        batch.dispose();
-        image.dispose();
+    public void postCreate() {
+        setScreen(new GameScreen(this));
     }
 }
