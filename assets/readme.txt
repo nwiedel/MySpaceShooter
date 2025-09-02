@@ -12,3 +12,17 @@ Die game-util Klassen wurden geringfügig verändert wie in dem Kurs benutzt.
 
 Ich danke den Erstellern des Kurses für die Arbeit und die hervorragende
 Einführung in die Spieleentwicklung.
+
+
+
+
+
+1. Neuew Module erstellen
+- neues direktory erstellen
+- normale Gliederung: src - java
+- java als source root setzen (Rechtsclick)
+- bulid gradle (cor) kopieren und in neues Modul einfügen, Namen im Text ändern und
+wie im Projekt abändern.
+- Projekt neu bauen
+
+2. GameBase erstellen (game-utils)
