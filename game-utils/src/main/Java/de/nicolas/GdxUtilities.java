@@ -1,4 +1,4 @@
-package de;
+package de.nicolas;
 
 import com.badlogic.gdx.graphics.Color;
 
