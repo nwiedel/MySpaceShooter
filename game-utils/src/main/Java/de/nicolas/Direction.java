@@ -6,7 +6,7 @@ public enum Direction {
     RIGHT,
     LEFT;
 
-    public boolean isUP(){
+    public boolean isUp(){
         return this == UP;
     }
 
